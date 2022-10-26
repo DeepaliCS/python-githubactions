@@ -19,6 +19,7 @@ jobs:
       - name: deploy
         run: |
           zip -j deploy.zip ./dist/*
+      # aws lambda update-function-code --function-name=TestFunc-2110-1725 --zip-file=fileb://deploy.zip
       # pip install -r requirements.txt
 
       #       with:
